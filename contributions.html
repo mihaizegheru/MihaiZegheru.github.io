@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Edit this HTML file directly. No templates or build step. -->
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compiler and database contributions by Mihai Zegheru: LLVM code generation, C++ modules, Flang, and ClickHouse parsing and storage.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta property="og:title" content="Open source — Mihai Zegheru">
+  <meta property="og:description" content="Compiler and database contributions by Mihai Zegheru: LLVM code generation, C++ modules, Flang, and ClickHouse parsing and storage.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mihaizegheru.com/contributions.html">
+  <link rel="canonical" href="https://www.mihaizegheru.com/contributions.html">
+  <title>Open source — Mihai Zegheru</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    try {
+      const saved = localStorage.getItem('portfolio-theme');
+      document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+        ? saved : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    } catch (_) {}
+  </script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="contributions">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="container nav-layout">
+    <a class="brand" href="index.html" aria-label="Mihai Zegheru homepage">mz<span>.</span></a>
+    <div class="nav-right">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="contributions.html" aria-current="page">Open source</a><a href="archive.html">Archive</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="container" id="main">
+  <section class="page-intro"><a class="back-link mono" href="index.html">← Back home</a><p class="eyebrow">Open source / Contribution log</p><h1>Working in the open<span class="accent">.</span></h1><p class="page-lede">Reproducers, fixes, and regression tests for LLVM and ClickHouse.</p><div class="page-meta"><span class="mono">6 pull requests · 1 merged</span><a class="text-link" href="https://github.com/search?type=pullrequests&amp;q=is%3Apr+author%3Amihaizegheru+sort%3Acreated-desc">Latest on GitHub ↗</a></div></section>
+  <div class="filter-bar" data-pr-filters hidden aria-label="Filter pull requests"><button type="button" data-filter="all" aria-pressed="true">All <span>6</span></button><button type="button" data-filter="open" aria-pressed="false">Open <span>5</span></button><button type="button" data-filter="merged" aria-pressed="false">Merged <span>1</span></button><span class="filter-result mono" data-filter-result role="status">Showing all 6</span></div>
+
+<section class="contribution-group" data-pr-group aria-labelledby="repo-1"><div class="repo-heading"><h2 id="repo-1">LLVM<span class="mono" data-group-count>4 pull requests</span></h2><a href="https://github.com/llvm/llvm-project/pulls?q=is%3Apr+author%3Amihaizegheru+sort%3Acreated-desc" class="mono">All my LLVM PRs ↗</a></div><article class="contribution-row" data-pr-status="open"><div class="contribution-status"><span class="status status-open">○ Open</span><span class="mono">#235458</span></div><div class="contribution-main"><p class="pr-area mono">Clang · C++ modules</p><h3><a href="https://github.com/llvm/llvm-project/pull/235458">Distinct names for local lambda types <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Preserves closure prefixes when mangling local lambda types in named modules, preventing collisions between different lambdas.</p></div></article>
+<article class="contribution-row" data-pr-status="open"><div class="contribution-status"><span class="status status-open">○ Open</span><span class="mono">#234690</span></div><div class="contribution-main"><p class="pr-area mono">RISC-V · MC / LLD</p><h3><a href="https://github.com/llvm/llvm-project/pull/234690">Function alignment during linker relaxation <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Adds alignment relocations for preferred padding so linker relaxation preserves the function’s required minimum alignment, with assembler and linker regression tests.</p></div></article>
+<article class="contribution-row" data-pr-status="merged"><div class="contribution-status"><span class="status status-merged">✓ Merged</span><span class="mono">#228128</span></div><div class="contribution-main"><p class="pr-area mono">AArch64 · GlobalISel</p><h3><a href="https://github.com/llvm/llvm-project/pull/228128">Carry reuse across debug instructions <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Keeps debug-only instructions from introducing extra carry-handling instructions. Includes MIR regression coverage for add/sub combinations and boundary cases.</p></div></article>
+<article class="contribution-row" data-pr-status="open"><div class="contribution-status"><span class="status status-open">○ Open</span><span class="mono">#228037</span></div><div class="contribution-main"><p class="pr-area mono">Flang · OpenMP</p><h3><a href="https://github.com/llvm/llvm-project/pull/228037">Error recovery for cyclic Fortran modules <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Guards missing symbols after name resolution reports a USE cycle, and keeps visitor stacks balanced so OpenMP checking can recover without crashing.</p></div></article></section>
+<section class="contribution-group" data-pr-group aria-labelledby="repo-2"><div class="repo-heading"><h2 id="repo-2">ClickHouse<span class="mono" data-group-count>2 pull requests</span></h2><a href="https://github.com/ClickHouse/ClickHouse/pulls?q=is%3Apr+author%3Amihaizegheru+sort%3Acreated-desc" class="mono">All my ClickHouse PRs ↗</a></div><article class="contribution-row" data-pr-status="open"><div class="contribution-status"><span class="status status-open">○ Open</span><span class="mono">#127725</span></div><div class="contribution-main"><p class="pr-area mono">Parsing · Dynamic</p><h3><a href="https://github.com/ClickHouse/ClickHouse/pull/127725">Preserving NULL values in Dynamic columns <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Corrects cases where NULL became a string or numeric zero while reading VALUES, CSV, or TSV, including transitions from expression parsing.</p></div></article>
+<article class="contribution-row" data-pr-status="open"><div class="contribution-status"><span class="status status-open">○ Open</span><span class="mono">#124910</span></div><div class="contribution-main"><p class="pr-area mono">Storage · Iceberg</p><h3><a href="https://github.com/ClickHouse/ClickHouse/pull/124910">Valid metadata for unsorted Iceberg tables <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Uses sort order ID 0 for an empty ORDER BY tuple(), so generated metadata is accepted by other Iceberg implementations.</p></div></article></section>  <p class="update-note contribution-note mono">Status checked 26 Oct 2026. Open pull requests are proposed changes; merged changes are marked separately.</p>
+</main>
+<footer class="footer container">
+  <div class="footer-main"><span class="footer-name">Mihai Zegheru<span class="accent">.</span></span><a class="text-link" href="mailto:mihai@mihaizegheru.com">mihai@mihaizegheru.com <span aria-hidden="true">↗</span></a></div>
+  <div class="footer-bottom"><span>© 2026 · Bucharest, Romania</span><div><a href="https://github.com/mihaizegheru">GitHub ↗</a><a href="https://www.linkedin.com/in/zegheru/">LinkedIn ↗</a><a href="#main">Back to top ↑</a></div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- Edit this HTML file directly. No templates or build step. -->
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by Mihai Zegheru spanning systems, parallel programming, data structures, games, and experiments.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta property="og:title" content="Project archive — Mihai Zegheru">
+  <meta property="og:description" content="Projects by Mihai Zegheru spanning systems, parallel programming, data structures, games, and experiments.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mihaizegheru.com/archive.html">
+  <link rel="canonical" href="https://www.mihaizegheru.com/archive.html">
+  <title>Project archive — Mihai Zegheru</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    try {
+      const saved = localStorage.getItem('portfolio-theme');
+      document.documentElement.dataset.theme = saved === 'dark' || saved === 'light'
+        ? saved : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    } catch (_) {}
+  </script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="archive">
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="container nav-layout">
+    <a class="brand" href="index.html" aria-label="Mihai Zegheru homepage">mz<span>.</span></a>
+    <div class="nav-right">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="contributions.html">Open source</a><a href="archive.html" aria-current="page">Archive</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="container" id="main">
+  <section class="page-intro"><a class="back-link mono" href="index.html">← Back home</a><p class="eyebrow">Projects / Archive</p><h1>The rest of the workshop<span class="accent">.</span></h1><p class="page-lede">A longer look at the things I’ve built: systems exercises, small tools, games, and experiments.</p><nav class="archive-nav" aria-label="Archive categories"><a href="#engineering">Engineering <span class="mono">13</span></a><a href="#tools">Tools &amp; experiments <span class="mono">7</span></a><a href="#games">Games <span class="mono">9</span></a><a href="#other">Plugins &amp; hackathons <span class="mono">5</span></a></nav></section>
+
+<section class="archive-group" id="engineering" aria-labelledby="engineering-title"><h2 id="engineering-title">Engineering<span class="mono">13</span></h2><div><article class="archive-row"><span class="entry-year mono">2026</span><div><h3><a href="https://github.com/mihaizegheru/athreads">athreads <span class="arrow" aria-hidden="true">↗</span></a></h3><p>A preemptive threading library for the ATmega2560. Timer-driven scheduling, register- and stack-preserving context switches, sleeping threads, and per-thread CPU accounting.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025–2026</span><div><h3><a href="https://github.com/mihaizegheru/Sable">Sable <span class="arrow" aria-hidden="true">↗</span></a></h3><p>A C++23 game engine prototype built around an archetype ECS, 16 KB storage chunks, explicit system ordering, and an OpenGL renderer.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025–2026</span><div><h3><a href="https://github.com/mihaizegheru/Market-Simulator">Market Simulator <span class="arrow" aria-hidden="true">↗</span></a></h3><p>An exchange-style matching engine with price–time priority, partial fills, and cancel/replace semantics. TCP handles order entry; UDP multicast distributes market data.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/Router-Data-Plane">Router Dataplane <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Coursework: trie-based longest-prefix route lookup, IPv4 forwarding, ARP resolution, and ICMP.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/Parallel-Firewall">Parallel Firewall <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Coursework: simulated packet processing with a shared circular buffer, POSIX threads, and ordered logging.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/Memory-Allocator">Memory Allocator <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Custom allocation routines backed by brk and mmap.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/HTTP-Client">HTTP Client <span class="arrow" aria-hidden="true">↗</span></a></h3><p>HTTP connections and sessions in C++.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/Subscription-Messaging-App-TCP-UDP">Subscription Messaging App <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Topic subscriptions across TCP clients and UDP publishers.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2024</span><div><h3><a href="https://github.com/mihaizegheru/Segregated-Free-Lists">Segregated Free Lists <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Heap-like memory management using segregated free lists.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2024</span><div><h3><a href="https://github.com/mihaizegheru/MiniLibc">MiniLibc <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Experiments with a small C runtime library.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2023</span><div><h3><a href="https://github.com/mihaizegheru/Container-library">Container Library <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Header-only container implementations in C.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2023</span><div><h3><a href="https://github.com/mihaizegheru/Bitset-library">Bitset Library <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Bitset implementation in C.</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://github.com/mihaizegheru/Voronoi-OpenGL">Voronoi OpenGL <span class="arrow" aria-hidden="true">↗</span></a></h3><p>A graphics experiment using OpenGL.</p></div></article></div></section>
+<section class="archive-group" id="tools" aria-labelledby="tools-title"><h2 id="tools-title">Tools &amp; experiments<span class="mono">7</span></h2><div><article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/iasi">iasi <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Infoarena scout and indexer in Go.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2025</span><div><h3><a href="https://github.com/mihaizegheru/cfr">cfr <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Codeforces command-line utility in Go.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2026</span><div><h3><a href="https://github.com/mihaizegheru/InkTime-Smartwatch">InkTime Smartwatch <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Smartwatch project repository.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2024</span><div><h3><a href="https://github.com/mihaizegheru/LCD-Space-Shooter">LCD Space Shooter <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Microcontroller game played on an LCD display.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2024</span><div><h3><a href="https://github.com/mihaizegheru/Numerical-Methods-Sandbox">Numerical Methods Sandbox <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Numerical methods experiments.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2024</span><div><h3><a href="https://github.com/mihaizegheru/Image-Editor">Image Editor <span class="arrow" aria-hidden="true">↗</span></a></h3><p>An image editing project in C.</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2023</span><div><h3><a href="https://github.com/mihaizegheru/Simple-Machine-Learning">Simple Machine Learning <span class="arrow" aria-hidden="true">↗</span></a></h3><p>An introductory machine-learning project in C.</p></div></article></div></section>
+<section class="archive-group" id="games" aria-labelledby="games-title"><h2 id="games-title">Games<span class="mono">9</span></h2><div><article class="archive-row"><span class="entry-year mono">2023</span><div><h3><a href="https://triargon.itch.io/on-haunting-duty">On Haunting Duty <span class="arrow" aria-hidden="true">↗</span></a></h3><p>GMTK Game Jam</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2022</span><div><h3><a href="https://triargon.itch.io/haunted">Haunted <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Horror game</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2022</span><div><h3><a href="https://mihaiz.itch.io/the-life-of-a-die">The Life of a Die <span class="arrow" aria-hidden="true">↗</span></a></h3><p>GMTK Game Jam</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2022</span><div><h3><a href="https://mihaiz.itch.io/ferma-animalelor">Ferma Animalelor <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Game developed for a reading project</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://play.google.com/store/apps/details?id=com.Zdev.Minesweeper">Minesweeper <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Android game</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://play.google.com/store/apps/details?id=com.ZDev.WarRun">War Run <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Android game</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://play.google.com/store/apps/details?id=com.Zdev.SkyGetaway">Sky Getaway <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Android game</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://www.mihaizegheru.com/projects/wolves.html">Wolves <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Game project</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3>Grapple Run</h3><p>Game prototype</p></div></article></div></section>
+<section class="archive-group" id="other" aria-labelledby="other-title"><h2 id="other-title">Plugins &amp; hackathons<span class="mono">5</span></h2><div><article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://www.unrealengine.com/marketplace/en-US/product/realtime-minimap">Realtime Minimap <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Unreal Engine marketplace plugin</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://www.unrealengine.com/marketplace/en-US/product/multi-floor-minimap">Multi-floor Minimap <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Unreal Engine marketplace plugin</p></div></article>
+<article class="archive-row"><span class="entry-year mono"></span><div><h3><a href="https://www.unrealengine.com/marketplace/en-US/product/navigation-compass">Navigation Compass <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Unreal Engine marketplace plugin</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2022</span><div><h3><a href="https://www.mihaizegheru.com/projects/shophy.html">Shophy <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Hackathon project</p></div></article>
+<article class="archive-row"><span class="entry-year mono">2021</span><div><h3><a href="https://www.mihaizegheru.com/projects/workouttogether.html">Workout Together <span class="arrow" aria-hidden="true">↗</span></a></h3><p>Hackathon project</p></div></article></div></section></main>
+<footer class="footer container">
+  <div class="footer-main"><span class="footer-name">Mihai Zegheru<span class="accent">.</span></span><a class="text-link" href="mailto:mihai@mihaizegheru.com">mihai@mihaizegheru.com <span aria-hidden="true">↗</span></a></div>
+  <div class="footer-bottom"><span>© 2026 · Bucharest, Romania</span><div><a href="https://github.com/mihaizegheru">GitHub ↗</a><a href="https://www.linkedin.com/in/zegheru/">LinkedIn ↗</a><a href="#main">Back to top ↑</a></div></div>
+</footer>
+</body>
+</html>
