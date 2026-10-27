@@ -10,7 +10,7 @@
       toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
       toggle.title = dark ? 'Switch to light theme' : 'Switch to dark theme';
     }
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#10151e' : '#f8f9fc');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#14181d' : '#fafbfc');
   }
   if (toggle) {
     toggle.hidden = false;
